@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent" >
+    
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="16dp"
+        android:layout_toRightOf="@+id/imageView1"
+        android:text="Founded on: 30 October 2003" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:text="Founded by: J.H. Patel " />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_below="@+id/textView2"
+        android:text="Chair Person: Sharad Yadav" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView4"
+        android:layout_below="@+id/textView4"
+        android:layout_marginTop="14dp"
+        android:text="Ideology: Integral humanism, Secularism, Socialism
+\nPolitical Position: Centre Left
+\nECI Status: State Party
+\n
+\nSecretary-General: K.C. Tyagi
+\n
+\nLeader in Lok Sabha: Sharad Yadav
+\nLeader in Rajya Sabha: Shivanand Tiwari
+\nSeats in Lok Sabha: 20/545
+\nSeats in Rajya Sabha: 9/245
+" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/imageView1"
+        android:layout_marginTop="18dp"
+        android:text="Headquarters at: Patna, Bihar" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="100dp"
+        android:layout_height="75dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/textView1"
+        android:src="@drawable/jdu" />
+
+</RelativeLayout>
+</ScrollView><!-- From: file:/C:/Users/anubh_000/AndroidStudioProjects/KnowYourIndia/app/src/main/res/layout/jdu_fragment.xml -->

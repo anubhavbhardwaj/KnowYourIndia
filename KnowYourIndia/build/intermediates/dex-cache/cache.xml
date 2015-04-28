@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\anubh_000\AndroidStudioProjects\KnowYourIndia\app\build\intermediates\exploded-aar\com.android.support\gridlayout-v7\19.1.0\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="af4cc326e6cd92f88db12298767e521743aedd36">
+        <dex dex="C:\Users\anubh_000\AndroidStudioProjects\KnowYourIndia\app\build\intermediates\pre-dexed\debug\classes-dcb9d13854dc2df27461c592af7259f8a101ddd8.jar" />
+    </item>
+    <item
+        jar="C:\Users\anubh_000\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-v4\19.1.0\support-v4-19.1.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="85f201b380937e61a9dce6ca90ccf6872abbfb67">
+        <dex dex="C:\Users\anubh_000\AndroidStudioProjects\KnowYourIndia\app\build\intermediates\pre-dexed\debug\support-v4-19.1.0-f640ec8b8d74a14922ab146a4bf5d77eba0a5d8c.jar" />
+    </item>
+
+</items>

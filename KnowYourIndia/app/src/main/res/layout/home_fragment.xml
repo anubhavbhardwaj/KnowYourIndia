@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/down" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/left" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:layout_alignLeft="@+id/imageView4"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/up" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/imageView1"
+        android:src="@drawable/right" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+		android:layout_marginLeft="-35dp"
+        android:rotation="-90"
+        android:text="Swipe Right for Party Information"
+        android:textSize="10dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView3"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_alignParentRight="true"
+        android:rotation="90"
+        android:layout_marginRight="-35dp"
+        android:text="Swipe Left for Interesting Data"
+        android:textSize="10dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/imageView4"
+        android:layout_centerHorizontal="true"
+        android:text="Swipe Up for Candidate Information"
+        android:textAlignment="center"
+        android:textSize="10dp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_alignRight="@+id/textView2"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:text="Welcome to Know Your India, \nYour one stop for all your basic political info"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView3"
+        android:layout_centerHorizontal="true"
+        android:text="Swipe Down for Political News"
+        android:textSize="10dp" />
+
+</RelativeLayout>

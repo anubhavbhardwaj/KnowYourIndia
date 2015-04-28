@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent" >
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="50dp"
+        android:layout_height="75dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/congress_india_logo" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="16dp"
+        android:layout_toRightOf="@+id/imageView1"
+        android:text="Founded on: 28 December 1885" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:text="Founder: Allan Octavian Hume" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_below="@+id/textView2"
+        android:text="Chair Person: Sonia Gandhi" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/imageView1"
+        android:text="Headquarters at: 24, Akbar Road, New Delhi." />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView4"
+        android:layout_marginTop="17dp"
+        android:text="Parliamentary Chairperson: Sonia Gandhi
+\nLeader in Lok Sabha: Sushilkumar Shinde
+\nLeader in Rajya Sabha: Manmohan Singh
+\nPrime-ministerial candidate: Not Decided
+\n
+\nLok Sabha constitutional Candidates analysis according to nominations filed till March 26, 2014
+\n
+\nTotal Nos of candidates announced: 194
+\nNo. of Candidates Analysed (Total): 126
+\nNo of Candidates with Criminal Cases: 33
+\nNo. of Candidates with Serious Criminal Cases: 10
+\n% of Candidates with Criminal Cases: 26%
+\n% of Candidates with Serious Criminal Cases: 8%
+\nNo of Crorepati Candidates: 86
+\n% of Crorepati Candidates: 68%
+\nAverage Assets (in Rs.) of Candidates: 5 crore+" />
+
+</RelativeLayout>
+</ScrollView>

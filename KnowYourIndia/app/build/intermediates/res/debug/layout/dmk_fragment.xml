@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent" >
+    
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="16dp"
+        android:layout_toRightOf="@+id/imageView1"
+        android:text="Founded on: 1949" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:text="Founded by: C.N. Annadurai" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_below="@+id/textView2"
+        android:text="Chair Person: M. Karunanidhi" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView4"
+        android:layout_below="@+id/textView4"
+        android:layout_marginTop="14dp"
+        android:text="Ideology: Social Democracy, Populism, Democratic socialism
+\nParty Position: Centre Left
+\nECI Status: State Party
+\n
+\nSecretary-General: K Anbazhagan
+\nLeader in Lok Sabha: T. R. Baalu
+\n
+\nSeats in Lok Sabha: 18/545
+\nSeats in Rajya Sabha: 7/245
+\nSeats in Legislative assembly: 23/234" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/imageView1"
+        android:layout_marginTop="18dp"
+        android:text="Headquarters at: Anna Arivalayam, Anna Salai, Chennai – 600018" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="100dp"
+        android:layout_height="75dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/textView1"
+        android:src="@drawable/dmk" />
+
+</RelativeLayout>
+</ScrollView><!-- From: file:/C:/Users/anubh_000/AndroidStudioProjects/KnowYourIndia/app/src/main/res/layout/dmk_fragment.xml -->

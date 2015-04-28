@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent" >
+    
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="16dp"
+        android:layout_toRightOf="@+id/imageView1"
+        android:text="Founded on: October 4, 1992" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:text="Founded by: Mulayam Singh Yadav" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_below="@+id/textView2"
+        android:text="Chair Person: Mulayam Singh Yadav" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView4"
+        android:layout_below="@+id/textView4"
+        android:layout_marginTop="14dp"
+        android:text="Secretary-General: Kiranmoy Nanda
+\nLeader in Lok Sabha: Mulayam Singh
+\nLeader in Rajya Sabha: Ram Gopal Yadav
+\n
+\nSeats in Lok Sabha: 22/545
+\nSeats in Rajya Sabha: 9/245
+\nSeats in UP legislative Assembly: 224/403" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/imageView1"
+        android:layout_marginTop="18dp"
+        android:text="Headquarters at: 18 Copernicus Lane, New Delhi" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="100dp"
+        android:layout_height="75dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/textView1"
+        android:src="@drawable/sp" />
+
+</RelativeLayout>
+</ScrollView><!-- From: file:/C:/Users/anubh_000/AndroidStudioProjects/KnowYourIndia/app/src/main/res/layout/sp_fragment.xml -->

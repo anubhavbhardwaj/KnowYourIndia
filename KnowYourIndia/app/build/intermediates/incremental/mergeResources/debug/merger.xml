@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="19.1.0"><source path="C:\Users\anubh_000\AndroidStudioProjects\KnowYourIndia\app\build\intermediates\exploded-aar\com.android.support\gridlayout-v7\19.1.0\res"><file path="C:\Users\anubh_000\AndroidStudioProjects\KnowYourIndia\app\build\intermediates\exploded-aar\com.android.support\gridlayout-v7\19.1.0\res\values\values.xml" qualifiers=""><declare-styleable name="GridLayout_Layout">
+
+        <!--
+              support versions. All attributes not present in MarginLayout are
+              redefined in the support library name space.
+        -->
+
+
+        <!-- START MarginLayout layoutparams -->
+
+        <attr name="android:layout_width"/>
+        <attr name="android:layout_height"/>
+        <!--
+              Specifies extra space on the left, top, right and bottom
+              sides of this view. This space is outside this view's bounds.
+        -->
+        <attr name="android:layout_margin"/>
+        <!--
+              Specifies extra space on the left side of this view.
+              This space is outside this view's bounds.
+        -->
+        <attr name="android:layout_marginLeft"/>
+        <!--
+              Specifies extra space on the top side of this view.
+              This space is outside this view's bounds.
+        -->
+        <attr name="android:layout_marginTop"/>
+        <!--
+              Specifies extra space on the right side of this view.
+              This space is outside this view's bounds.
+        -->
+        <attr name="android:layout_marginRight"/>
+        <!--
+              Specifies extra space on the bottom side of this view.
+              This space is outside this view's bounds.
+        -->
+        <attr name="android:layout_marginBottom"/>
+
+        <!-- END MarginLayout layoutparams -->
+
+
+        <!--
+        The row boundary delimiting the top of the group of cells
+        occupied by this view.
+        -->
+        <attr format="integer" name="layout_row"/>
+        <!--
+        The row span: the difference between the bottom and top
+        boundaries delimiting the group of cells occupied by this view.
+        The default is one.
+        See {@link android.widget.GridLayout.Spec}.
+        -->
+        <attr format="integer" min="1" name="layout_rowSpan"/>
+        <!--
+        The column boundary delimiting the left of the group of cells
+        occupied by this view.
+        -->
+        <attr format="integer" name="layout_column"/>
+        <!--
+        The column span: the difference between the right and left
+        boundaries delimiting the group of cells occupied by this view.
+        The default is one.
+        See {@link android.widget.GridLayout.Spec}.
+        -->
+        <attr format="integer" min="1" name="layout_columnSpan"/>
+        <!--
+        Gravity specifies how a component should be placed in its group of cells.
+        The default is LEFT | BASELINE.
+        See {@link android.widget.GridLayout.LayoutParams#setGravity(int)}.
+        -->
+        <attr name="layout_gravity">
+
+            <!-- Push object to the top of its container, not changing its size. -->
+            <flag name="top" value="0x30"/>
+            <!-- Push object to the bottom of its container, not changing its size. -->
+            <flag name="bottom" value="0x50"/>
+            <!-- Push object to the left of its container, not changing its size. -->
+            <flag name="left" value="0x03"/>
+            <!-- Push object to the right of its container, not changing its size. -->
+            <flag name="right" value="0x05"/>
+            <!-- Place object in the vertical center of its container, not changing its size. -->
+            <flag name="center_vertical" value="0x10"/>
+            <!-- Grow the vertical size of the object if needed so it completely fills its container. -->
+            <flag name="fill_vertical" value="0x70"/>
+            <!-- Place object in the horizontal center of its container, not changing its size. -->
+            <flag name="center_horizontal" value="0x01"/>
+            <!-- Grow the horizontal size of the object if needed so it completely fills its container. -->
+            <flag name="fill_horizontal" value="0x07"/>
+            <!-- Place the object in the center of its container in both the vertical and horizontal axis, not changing its size. -->
+            <flag name="center" value="0x11"/>
+            <!-- Grow the horizontal and vertical size of the object if needed so it completely fills its container. -->
+            <flag name="fill" value="0x77"/>
+            <!--
+             Additional option that can be set to have the top and/or bottom edges of
+             the child clipped to its container's bounds.
+             The clip will be based on the vertical gravity: a top gravity will clip the bottom
+             edge, a bottom gravity will clip the top edge, and neither will clip both edges.
+            -->
+            <flag name="clip_vertical" value="0x80"/>
+            <!--
+             Additional option that can be set to have the left and/or right edges of
+             the child clipped to its container's bounds.
+             The clip will be based on the horizontal gravity: a left gravity will clip the right
+             edge, a right gravity will clip the left edge, and neither will clip both edges.
+            -->
+            <flag name="clip_horizontal" value="0x08"/>
+            <!-- Push object to the beginning of its container, not changing its size. -->
+            <flag name="start" value="0x00800003"/>
+            <!-- Push object to the end of its container, not changing its size. -->
+            <flag name="end" value="0x00800005"/>
+        </attr>
+    </declare-styleable><dimen name="default_gap">16dip</dimen><declare-styleable name="GridLayout">
+
+        <!--
+              support versions. All attributes not present in ViewGroup/View are
+              redefined in the support library namespace.
+        -->
+
+
+        <!--
+        The orientation property is not used during layout. It is only used to
+        allocate row and column parameters when they are not specified by its children's
+        layout parameters. GridLayout works like LinearLayout in this case;
+        putting all the components either in a single row or in a single column -
+        depending on the value of this flag. In the horizontal case, a columnCount
+        property may be additionally supplied to force new rows to be created when a
+        row is full. The rowCount attribute may be used similarly in the vertical case.
+        The default is horizontal.
+        -->
+        <attr name="orientation">
+
+            <!-- Defines an horizontal widget. -->
+            <enum name="horizontal" value="0"/>
+            <!-- Defines a vertical widget. -->
+            <enum name="vertical" value="1"/>
+        </attr>
+        <!-- The maximum number of rows to create when automatically positioning children. -->
+        <attr format="integer" name="rowCount"/>
+        <!-- The maximum number of columns to create when automatically positioning children. -->
+        <attr format="integer" name="columnCount"/>
+        <!--
+        When set to true, tells GridLayout to use default margins when none are specified
+        in a view's layout parameters.
+        The default value is false.
+        See {@link android.widget.GridLayout#setUseDefaultMargins(boolean)}.
+        -->
+        <attr format="boolean" name="useDefaultMargins"/>
+        <!--
+        When set to alignMargins, causes alignment to take place between the outer
+        boundary of a view, as defined by its margins. When set to alignBounds,
+        causes alignment to take place between the edges of the view.
+        The default is alignMargins.
+        See {@link android.widget.GridLayout#setAlignmentMode(int)}.
+        -->
+        <attr name="alignmentMode">
+
+            <!--
+            Align the bounds of the children.
+            See {@link android.widget.GridLayout#ALIGN_BOUNDS}.
+            -->
+            <enum name="alignBounds" value="0"/>
+            <!--
+            Align the margins of the children.
+            See {@link android.widget.GridLayout#ALIGN_MARGINS}.
+            -->
+            <enum name="alignMargins" value="1"/>
+        </attr>
+        <!--
+        When set to true, forces row boundaries to appear in the same order
+        as row indices.
+        The default is true.
+        See {@link android.widget.GridLayout#setRowOrderPreserved(boolean)}.
+        -->
+        <attr format="boolean" name="rowOrderPreserved"/>
+        <!--
+        When set to true, forces column boundaries to appear in the same order
+        as column indices.
+        The default is true.
+        See {@link android.widget.GridLayout#setColumnOrderPreserved(boolean)}.
+        -->
+        <attr format="boolean" name="columnOrderPreserved"/>
+    </declare-styleable></file></source></dataSet><dataSet config="main"><source path="C:\Users\anubh_000\AndroidStudioProjects\KnowYourIndia\app\src\main\res"><file name="aap" path="C:\Users\anubh_000\AndroidStudioProjects\KnowYourIndia\app\src\main\res\drawable-hdpi\aap.jpg" qualifiers="hdpi-v4" type="drawable"/><file name="aitc" path="C:\Users\anubh_000\AndroidStudioProjects\KnowYourIndia\app\src\main\res\drawable-hdpi\aitc.png" qualifiers="hdpi-v4" type="drawable"/><file name="amaze" path="C:\Users\anubh_000\AndroidStudioProjects\KnowYourIndia\app\src\main\res\drawable-hdpi\amaze.png" qualifiers="hdpi-v4" type="drawable"/><file name="background" path="C:\Users\anubh_000\AndroidStudioProjects\KnowYourIndia\app\src\main\res\drawable-hdpi\background.jpg" qualifiers="hdpi-v4" type="drawable"/><file name="bjp" path="C:\Users\anubh_000\AndroidStudioProjects\KnowYourIndia\app\src\main\res\drawable-hdpi\bjp.jpg" qualifiers="hdpi-v4" type="drawable"/><file name="bsp" path="C:\Users\anubh_000\AndroidStudioProjects\KnowYourIndia\app\src\main\res\drawable-hdpi\bsp.jpg" qualifiers="hdpi-v4" type="drawable"/><file name="congress_india_logo" path="C:\Users\anubh_000\AndroidStudioProjects\KnowYourIndia\app\src\main\res\drawable-hdpi\congress_india_logo.jpg" qualifiers="hdpi-v4" type="drawable"/><file name="dmk" path="C:\Users\anubh_000\AndroidStudioProjects\KnowYourIndia\app\src\main\res\drawable-hdpi\dmk.jpg" qualifiers="hdpi-v4" type="drawable"/><file name="down" path="C:\Users\anubh_000\AndroidStudioProjects\KnowYourIndia\app\src\main\res\drawable-hdpi\down.png" qualifiers="hdpi-v4" type="drawable"/><file name="ic_launcher" path="C:\Users\anubh_000\AndroidStudioProjects\KnowYourIndia\app\src\main\res\drawable-hdpi\ic_launcher.png" qualifiers="hdpi-v4" type="drawable"/><file name="jdu" path="C:\Users\anubh_000\AndroidStudioProjects\KnowYourIndia\app\src\main\res\drawable-hdpi\jdu.jpg" qualifiers="hdpi-v4" type="drawable"/><file name="left" path="C:\Users\anubh_000\AndroidStudioProjects\KnowYourIndia\app\src\main\res\drawable-hdpi\left.png" qualifiers="hdpi-v4" type="drawable"/><file name="right" path="C:\Users\anubh_000\AndroidStudioProjects\KnowYourIndia\app\src\main\res\drawable-hdpi\right.png" qualifiers="hdpi-v4" type="drawable"/><file name="sp" path="C:\Users\anubh_000\AndroidStudioProjects\KnowYourIndia\app\src\main\res\drawable-hdpi\sp.jpg" qualifiers="hdpi-v4" type="drawable"/><file name="up" path="C:\Users\anubh_000\AndroidStudioProjects\KnowYourIndia\app\src\main\res\drawable-hdpi\up.png" qualifiers="hdpi-v4" type="drawable"/><file name="aap" path="C:\Users\anubh_000\AndroidStudioProjects\KnowYourIndia\app\src\main\res\drawable-mdpi\aap.jpg" qualifiers="mdpi-v4" type="drawable"/><file name="aitc" path="C:\Users\anubh_000\AndroidStudioProjects\KnowYourIndia\app\src\main\res\drawable-mdpi\aitc.png" qualifiers="mdpi-v4" type="drawable"/><file name="amaze" path="C:\Users\anubh_000\AndroidStudioProjects\KnowYourIndia\app\src\main\res\drawable-mdpi\amaze.png" qualifiers="mdpi-v4" type="drawable"/><file name="background" path="C:\Users\anubh_000\AndroidStudioProjects\KnowYourIndia\app\src\main\res\drawable-mdpi\background.jpg" qualifiers="mdpi-v4" type="drawable"/><file name="bjp" path="C:\Users\anubh_000\AndroidStudioProjects\KnowYourIndia\app\src\main\res\drawable-mdpi\bjp.jpg" qualifiers="mdpi-v4" type="drawable"/><file name="bsp" path="C:\Users\anubh_000\AndroidStudioProjects\KnowYourIndia\app\src\main\res\drawable-mdpi\bsp.jpg" qualifiers="mdpi-v4" type="drawable"/><file name="congress_india_logo" path="C:\Users\anubh_000\AndroidStudioProjects\KnowYourIndia\app\src\main\res\drawable-mdpi\congress_india_logo.jpg" qualifiers="mdpi-v4" type="drawable"/><file name="dmk" path="C:\Users\anubh_000\AndroidStudioProjects\KnowYourIndia\app\src\main\res\drawable-mdpi\dmk.jpg" qualifiers="mdpi-v4" type="drawable"/><file name="down" path="C:\Users\anubh_000\AndroidStudioProjects\KnowYourIndia\app\src\main\res\drawable-mdpi\down.png" qualifiers="mdpi-v4" type="drawable"/><file name="ic_launcher" path="C:\Users\anubh_000\AndroidStudioProjects\KnowYourIndia\app\src\main\res\drawable-mdpi\ic_launcher.png" qualifiers="mdpi-v4" type="drawable"/><file name="jdu" path="C:\Users\anubh_000\AndroidStudioProjects\KnowYourIndia\app\src\main\res\drawable-mdpi\jdu.jpg" qualifiers="mdpi-v4" type="drawable"/><file name="left" path="C:\Users\anubh_000\AndroidStudioProjects\KnowYourIndia\app\src\main\res\drawable-mdpi\left.png" qualifiers="mdpi-v4" type="drawable"/><file name="right" path="C:\Users\anubh_000\AndroidStudioProjects\KnowYourIndia\app\src\main\res\drawable-mdpi\right.png" qualifiers="mdpi-v4" type="drawable"/><file name="sp" path="C:\Users\anubh_000\AndroidStudioProjects\KnowYourIndia\app\src\main\res\drawable-mdpi\sp.jpg" qualifiers="mdpi-v4" type="drawable"/><file name="up" path="C:\Users\anubh_000\AndroidStudioProjects\KnowYourIndia\app\src\main\res\drawable-mdpi\up.png" qualifiers="mdpi-v4" type="drawable"/><file name="aap" path="C:\Users\anubh_000\AndroidStudioProjects\KnowYourIndia\app\src\main\res\drawable-xhdpi\aap.jpg" qualifiers="xhdpi-v4" type="drawable"/><file name="aitc" path="C:\Users\anubh_000\AndroidStudioProjects\KnowYourIndia\app\src\main\res\drawable-xhdpi\aitc.png" qualifiers="xhdpi-v4" type="drawable"/><file name="amaze" path="C:\Users\anubh_000\AndroidStudioProjects\KnowYourIndia\app\src\main\res\drawable-xhdpi\amaze.png" qualifiers="xhdpi-v4" type="drawable"/><file name="background" path="C:\Users\anubh_000\AndroidStudioProjects\KnowYourIndia\app\src\main\res\drawable-xhdpi\background.jpg" qualifiers="xhdpi-v4" type="drawable"/><file name="bjp" path="C:\Users\anubh_000\AndroidStudioProjects\KnowYourIndia\app\src\main\res\drawable-xhdpi\bjp.jpg" qualifiers="xhdpi-v4" type="drawable"/><file name="bsp" path="C:\Users\anubh_000\AndroidStudioProjects\KnowYourIndia\app\src\main\res\drawable-xhdpi\bsp.jpg" qualifiers="xhdpi-v4" type="drawable"/><file name="congress_india_logo" path="C:\Users\anubh_000\AndroidStudioProjects\KnowYourIndia\app\src\main\res\drawable-xhdpi\congress_india_logo.jpg" qualifiers="xhdpi-v4" type="drawable"/><file name="dmk" path="C:\Users\anubh_000\AndroidStudioProjects\KnowYourIndia\app\src\main\res\drawable-xhdpi\dmk.jpg" qualifiers="xhdpi-v4" type="drawable"/><file name="down" path="C:\Users\anubh_000\AndroidStudioProjects\KnowYourIndia\app\src\main\res\drawable-xhdpi\down.png" qualifiers="xhdpi-v4" type="drawable"/><file name="ic_launcher" path="C:\Users\anubh_000\AndroidStudioProjects\KnowYourIndia\app\src\main\res\drawable-xhdpi\ic_launcher.png" qualifiers="xhdpi-v4" type="drawable"/><file name="jdu" path="C:\Users\anubh_000\AndroidStudioProjects\KnowYourIndia\app\src\main\res\drawable-xhdpi\jdu.jpg" qualifiers="xhdpi-v4" type="drawable"/><file name="left" path="C:\Users\anubh_000\AndroidStudioProjects\KnowYourIndia\app\src\main\res\drawable-xhdpi\left.png" qualifiers="xhdpi-v4" type="drawable"/><file name="right" path="C:\Users\anubh_000\AndroidStudioProjects\KnowYourIndia\app\src\main\res\drawable-xhdpi\right.png" qualifiers="xhdpi-v4" type="drawable"/><file name="sp" path="C:\Users\anubh_000\AndroidStudioProjects\KnowYourIndia\app\src\main\res\drawable-xhdpi\sp.jpg" qualifiers="xhdpi-v4" type="drawable"/><file name="test" path="C:\Users\anubh_000\AndroidStudioProjects\KnowYourIndia\app\src\main\res\drawable-xhdpi\test.jpg" qualifiers="xhdpi-v4" type="drawable"/><file name="up" path="C:\Users\anubh_000\AndroidStudioProjects\KnowYourIndia\app\src\main\res\drawable-xhdpi\up.png" qualifiers="xhdpi-v4" type="drawable"/><file name="aap" path="C:\Users\anubh_000\AndroidStudioProjects\KnowYourIndia\app\src\main\res\drawable-xxhdpi\aap.jpg" qualifiers="xxhdpi-v4" type="drawable"/><file name="aitc" path="C:\Users\anubh_000\AndroidStudioProjects\KnowYourIndia\app\src\main\res\drawable-xxhdpi\aitc.png" qualifiers="xxhdpi-v4" type="drawable"/><file name="amaze" path="C:\Users\anubh_000\AndroidStudioProjects\KnowYourIndia\app\src\main\res\drawable-xxhdpi\amaze.png" qualifiers="xxhdpi-v4" type="drawable"/><file name="background" path="C:\Users\anubh_000\AndroidStudioProjects\KnowYourIndia\app\src\main\res\drawable-xxhdpi\background.jpg" qualifiers="xxhdpi-v4" type="drawable"/><file name="bjp" path="C:\Users\anubh_000\AndroidStudioProjects\KnowYourIndia\app\src\main\res\drawable-xxhdpi\bjp.jpg" qualifiers="xxhdpi-v4" type="drawable"/><file name="bsp" path="C:\Users\anubh_000\AndroidStudioProjects\KnowYourIndia\app\src\main\res\drawable-xxhdpi\bsp.jpg" qualifiers="xxhdpi-v4" type="drawable"/><file name="congress_india_logo" path="C:\Users\anubh_000\AndroidStudioProjects\KnowYourIndia\app\src\main\res\drawable-xxhdpi\congress_india_logo.jpg" qualifiers="xxhdpi-v4" type="drawable"/><file name="dmk" path="C:\Users\anubh_000\AndroidStudioProjects\KnowYourIndia\app\src\main\res\drawable-xxhdpi\dmk.jpg" qualifiers="xxhdpi-v4" type="drawable"/><file name="down" path="C:\Users\anubh_000\AndroidStudioProjects\KnowYourIndia\app\src\main\res\drawable-xxhdpi\down.png" qualifiers="xxhdpi-v4" type="drawable"/><file name="ic_launcher" path="C:\Users\anubh_000\AndroidStudioProjects\KnowYourIndia\app\src\main\res\drawable-xxhdpi\ic_launcher.png" qualifiers="xxhdpi-v4" type="drawable"/><file name="jdu" path="C:\Users\anubh_000\AndroidStudioProjects\KnowYourIndia\app\src\main\res\drawable-xxhdpi\jdu.jpg" qualifiers="xxhdpi-v4" type="drawable"/><file name="left" path="C:\Users\anubh_000\AndroidStudioProjects\KnowYourIndia\app\src\main\res\drawable-xxhdpi\left.png" qualifiers="xxhdpi-v4" type="drawable"/><file name="right" path="C:\Users\anubh_000\AndroidStudioProjects\KnowYourIndia\app\src\main\res\drawable-xxhdpi\right.png" qualifiers="xxhdpi-v4" type="drawable"/><file name="sp" path="C:\Users\anubh_000\AndroidStudioProjects\KnowYourIndia\app\src\main\res\drawable-xxhdpi\sp.jpg" qualifiers="xxhdpi-v4" type="drawable"/><file name="up" path="C:\Users\anubh_000\AndroidStudioProjects\KnowYourIndia\app\src\main\res\drawable-xxhdpi\up.png" qualifiers="xxhdpi-v4" type="drawable"/><file name="aap_fragment" path="C:\Users\anubh_000\AndroidStudioProjects\KnowYourIndia\app\src\main\res\layout\aap_fragment.xml" qualifiers="" type="layout"/><file name="activity_home" path="C:\Users\anubh_000\AndroidStudioProjects\KnowYourIndia\app\src\main\res\layout\activity_home.xml" qualifiers="" type="layout"/><file name="aitc_fragment" path="C:\Users\anubh_000\AndroidStudioProjects\KnowYourIndia\app\src\main\res\layout\aitc_fragment.xml" qualifiers="" type="layout"/><file name="bjp_fragment" path="C:\Users\anubh_000\AndroidStudioProjects\KnowYourIndia\app\src\main\res\layout\bjp_fragment.xml" qualifiers="" type="layout"/><file name="bsp_fragment" path="C:\Users\anubh_000\AndroidStudioProjects\KnowYourIndia\app\src\main\res\layout\bsp_fragment.xml" qualifiers="" type="layout"/><file name="candidateinfo_fragment" path="C:\Users\anubh_000\AndroidStudioProjects\KnowYourIndia\app\src\main\res\layout\candidateinfo_fragment.xml" qualifiers="" type="layout"/><file name="candidate_fragment" path="C:\Users\anubh_000\AndroidStudioProjects\KnowYourIndia\app\src\main\res\layout\candidate_fragment.xml" qualifiers="" type="layout"/><file name="cong_fragment" path="C:\Users\anubh_000\AndroidStudioProjects\KnowYourIndia\app\src\main\res\layout\cong_fragment.xml" qualifiers="" type="layout"/><file name="dmk_fragment" path="C:\Users\anubh_000\AndroidStudioProjects\KnowYourIndia\app\src\main\res\layout\dmk_fragment.xml" qualifiers="" type="layout"/><file name="home_fragment" path="C:\Users\anubh_000\AndroidStudioProjects\KnowYourIndia\app\src\main\res\layout\home_fragment.xml" qualifiers="" type="layout"/><file name="jdu_fragment" path="C:\Users\anubh_000\AndroidStudioProjects\KnowYourIndia\app\src\main\res\layout\jdu_fragment.xml" qualifiers="" type="layout"/><file name="news_fragment" path="C:\Users\anubh_000\AndroidStudioProjects\KnowYourIndia\app\src\main\res\layout\news_fragment.xml" qualifiers="" type="layout"/><file name="party_fragment" path="C:\Users\anubh_000\AndroidStudioProjects\KnowYourIndia\app\src\main\res\layout\party_fragment.xml" qualifiers="" type="layout"/><file name="sp_fragment" path="C:\Users\anubh_000\AndroidStudioProjects\KnowYourIndia\app\src\main\res\layout\sp_fragment.xml" qualifiers="" type="layout"/><file name="stumble_fragment" path="C:\Users\anubh_000\AndroidStudioProjects\KnowYourIndia\app\src\main\res\layout\stumble_fragment.xml" qualifiers="" type="layout"/><file name="home" path="C:\Users\anubh_000\AndroidStudioProjects\KnowYourIndia\app\src\main\res\menu\home.xml" qualifiers="" type="menu"/><file path="C:\Users\anubh_000\AndroidStudioProjects\KnowYourIndia\app\src\main\res\values\attrs.xml" qualifiers=""><declare-styleable name="CircularSeekBar">
+        <attr format="integer" name="progress"/>
+        <attr format="integer" name="max"/>
+        <attr format="boolean" name="move_outside_circle"/>
+        <attr format="boolean" name="maintain_equal_circle"/>
+        <attr format="boolean" name="use_custom_radii"/>
+        <attr format="float" name="circle_x_radius"/>
+        <attr format="float" name="circle_y_radius"/>
+        <attr format="float" name="circle_stroke_width"/>
+        <attr format="float" name="pointer_radius"/>
+        <attr format="float" name="pointer_halo_width"/>
+        <attr format="float" name="pointer_halo_border_width"/>
+        <attr format="string" name="circle_color"/>
+        <attr format="string" name="circle_progress_color"/>
+        <attr format="string" name="pointer_color"/>
+        <attr format="string" name="pointer_halo_color"/>
+        <attr format="string" name="pointer_halo_color_ontouch"/>
+        <attr format="integer" name="pointer_alpha_ontouch"/>
+        <attr format="float" name="start_angle"/>
+        <attr format="float" name="end_angle"/>
+        <attr format="string" name="circle_fill"/>
+    </declare-styleable></file><file path="C:\Users\anubh_000\AndroidStudioProjects\KnowYourIndia\app\src\main\res\values\dimens.xml" qualifiers=""><dimen name="activity_horizontal_margin">16dp</dimen><dimen name="activity_vertical_margin">16dp</dimen></file><file path="C:\Users\anubh_000\AndroidStudioProjects\KnowYourIndia\app\src\main\res\values\strings.xml" qualifiers=""><string name="action_settings">Settings</string><string name="app_name">KnowYourIndia</string><string name="hello_world">Hello world!</string><string name="title_activity_add_fact">AddFact</string></file><file path="C:\Users\anubh_000\AndroidStudioProjects\KnowYourIndia\app\src\main\res\values\styles.xml" qualifiers=""><style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style><style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style></file><file path="C:\Users\anubh_000\AndroidStudioProjects\KnowYourIndia\app\src\main\res\values-sw720dp-land\dimens.xml" qualifiers="sw720dp-land-v13"><dimen name="activity_horizontal_margin">128dp</dimen></file><file path="C:\Users\anubh_000\AndroidStudioProjects\KnowYourIndia\app\src\main\res\values-v11\styles.xml" qualifiers="v11"><style name="AppBaseTheme" parent="android:Theme.Holo.Light">
+        <!-- API 11 theme customizations can go here. -->
+    </style></file><file path="C:\Users\anubh_000\AndroidStudioProjects\KnowYourIndia\app\src\main\res\values-v14\styles.xml" qualifiers="v14"><style name="AppBaseTheme" parent="android:Theme.Holo.Light.DarkActionBar">
+        <!-- API 14 theme customizations can go here. -->
+    </style></file><file path="C:\Users\anubh_000\AndroidStudioProjects\KnowYourIndia\app\src\main\res\values-w820dp\dimens.xml" qualifiers="w820dp-v13"><dimen name="activity_horizontal_margin">64dp</dimen></file><file name="activity_add_fact" path="C:\Users\anubh_000\AndroidStudioProjects\KnowYourIndia\app\src\main\res\layout\activity_add_fact.xml" qualifiers="" type="layout"/><file name="menu_add_fact" path="C:\Users\anubh_000\AndroidStudioProjects\KnowYourIndia\app\src\main\res\menu\menu_add_fact.xml" qualifiers="" type="menu"/></source><source path="C:\Users\anubh_000\AndroidStudioProjects\KnowYourIndia\app\build\generated\res\rs\debug"/><source path="C:\Users\anubh_000\AndroidStudioProjects\KnowYourIndia\app\build\generated\res\generated\debug"/></dataSet><dataSet config="debug"><source path="C:\Users\anubh_000\AndroidStudioProjects\KnowYourIndia\app\src\debug\res"/></dataSet><mergedItems><configuration qualifiers=""><declare-styleable name="CircularSeekBar"><attr format="integer" name="progress"/><attr format="integer" name="max"/><attr format="boolean" name="move_outside_circle"/><attr format="boolean" name="maintain_equal_circle"/><attr format="boolean" name="use_custom_radii"/><attr format="float" name="circle_x_radius"/><attr format="float" name="circle_y_radius"/><attr format="float" name="circle_stroke_width"/><attr format="float" name="pointer_radius"/><attr format="float" name="pointer_halo_width"/><attr format="float" name="pointer_halo_border_width"/><attr format="string" name="circle_color"/><attr format="string" name="circle_progress_color"/><attr format="string" name="pointer_color"/><attr format="string" name="pointer_halo_color"/><attr format="string" name="pointer_halo_color_ontouch"/><attr format="integer" name="pointer_alpha_ontouch"/><attr format="float" name="start_angle"/><attr format="float" name="end_angle"/><attr format="string" name="circle_fill"/></declare-styleable><declare-styleable name="GridLayout_Layout"><attr name="android:layout_width"/><attr name="android:layout_height"/><attr name="android:layout_margin"/><attr name="android:layout_marginLeft"/><attr name="android:layout_marginTop"/><attr name="android:layout_marginRight"/><attr name="android:layout_marginBottom"/><attr format="integer" name="layout_row"/><attr format="integer" min="1" name="layout_rowSpan"/><attr format="integer" name="layout_column"/><attr format="integer" min="1" name="layout_columnSpan"/><attr name="layout_gravity"><flag name="top" value="0x30"/><flag name="bottom" value="0x50"/><flag name="left" value="0x03"/><flag name="right" value="0x05"/><flag name="center_vertical" value="0x10"/><flag name="fill_vertical" value="0x70"/><flag name="center_horizontal" value="0x01"/><flag name="fill_horizontal" value="0x07"/><flag name="center" value="0x11"/><flag name="fill" value="0x77"/><flag name="clip_vertical" value="0x80"/><flag name="clip_horizontal" value="0x08"/><flag name="start" value="0x00800003"/><flag name="end" value="0x00800005"/></attr></declare-styleable><declare-styleable name="GridLayout"><attr name="orientation"><enum name="horizontal" value="0"/><enum name="vertical" value="1"/></attr><attr format="integer" name="rowCount"/><attr format="integer" name="columnCount"/><attr format="boolean" name="useDefaultMargins"/><attr name="alignmentMode"><enum name="alignBounds" value="0"/><enum name="alignMargins" value="1"/></attr><attr format="boolean" name="rowOrderPreserved"/><attr format="boolean" name="columnOrderPreserved"/></declare-styleable></configuration></mergedItems></merger>

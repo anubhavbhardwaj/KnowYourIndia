@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent" >
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="100dp"
+        android:layout_height="75dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/bjp" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="16dp"
+        android:layout_toRightOf="@+id/imageView1"
+        android:text="Founded on: December 1980" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:text="Founded by: Syama Prasad Mookerjee" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_below="@+id/textView2"
+        android:text="Chair Person: Rajnath Singh" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView4"
+        android:layout_below="@+id/textView4"
+        android:layout_marginTop="14dp"
+        android:text="Parliamentary Chairperson: L.K. Advani
+        \nLeader in Lok Sabha: Sushma Swaraj (Leader of Opposition)
+
+\nLeader in Rajya Sabha: Arun Jaitley (Leader of Opposition)
+\n
+\nPrime-ministerial candidate: Narendra Modi
+\n
+\nLS constitutional Candidates analysis according to nominations filed till March 26, 2014
+\n
+\nTotal Nos of candidates announced = 107
+\nNo. of Candidates Analysed (Total) = 62
+\nNo of Candidates with Criminal Cases = 23
+\nNo. of Candidates with Serious Criminal Cases = 14
+\n% of Candidates with Criminal Cases = 37%
+\n% of Candidates with Serious Criminal Cases = 23%
+\n% of Crorepati Candidates = 48%
+\nAverage Assets (in Rs.) of Candidates = 3 crore+" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView3"
+        android:text="Headquarters at: 11 Ashoka Road, New Delhi 110001 " />
+
+</RelativeLayout>
+</ScrollView>

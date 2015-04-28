@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app1="http://schemas.android.com/apk/res/com.knowyourindia"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/right" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="-10dp"
+        android:rotation="90"
+        android:text="Swipe Left for Home"
+        android:textSize="10dp" />
+
+    <com.devadvance.circularseekbar.CircularSeekBar
+        android:id="@+id/circularSeekBar1"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/textView4"
+        app1:circle_color="#FFF8DC"
+        app1:circle_progress_color="#CD8500"
+        app1:max="360"
+        app1:pointer_halo_color="#FFC125"
+        app1:pointer_color="#CD9B1D" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp"
+        android:text="View Party" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button1"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="19dp"
+        android:text="AAP"
+        android:textAlignment="center" />
+
+</RelativeLayout><!-- From: file:/C:/Users/anubh_000/AndroidStudioProjects/KnowYourIndia/app/src/main/res/layout/party_fragment.xml -->

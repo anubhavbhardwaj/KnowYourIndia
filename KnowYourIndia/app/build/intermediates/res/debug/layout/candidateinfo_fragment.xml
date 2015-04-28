@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_below="@id/textView1"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:layout_alignLeft="@+id/textView1"
+                android:text="Indian National Congress"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="22dp"
+                android:text="Ninong Ering"
+                android:gravity="center_horizontal"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+            
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="10dp"
+                android:text="Constituency: Arunanchal EAST"
+                android:layout_below="@id/textView2"
+                android:layout_alignLeft="@+id/textView2"
+                android:gravity="center_horizontal"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+            
+             <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="10dp"
+                android:text="State : Arunanchal Pradesh"
+                android:layout_below="@id/textView3"
+                android:layout_alignLeft="@+id/textView1"
+                android:gravity="center_horizontal"
+                android:textAppearance="?android:attr/textAppearanceMedium" />    
+
+            
+
+        </RelativeLayout>
+   
+    </ScrollView>
+
+</RelativeLayout>
+<!-- From: file:/C:/Users/anubh_000/AndroidStudioProjects/KnowYourIndia/app/src/main/res/layout/candidateinfo_fragment.xml -->
