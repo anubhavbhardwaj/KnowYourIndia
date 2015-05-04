@@ -17,4 +17,11 @@ The app displays random amazing facts based on a server database.
 By swiping left the user can add facts to be approved by admins and displayed on the amazing facts page for other users and himself to see.
 
 CANDIDATE INFO:
-On this page the user has to use 3 spinners 
+On this page the user has to use 3 spinners to select the candidate whose information is needed.
+after viewing the data the user hits the back key to get back to the candidate selection screec where the swipe interface takes over
+
+PARTY INFO:
+The user selects the party  out of a predefined list using a circular seek bar(self designed) and hits the view party button to see the selected party's info.
+At the party info page the user can either swipe right to go back to the party selection page or swipe left  to ho to the home page.
+
+The user can quit the app by hitting the back key on any page except the candidate profile page.
